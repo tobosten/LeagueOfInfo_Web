@@ -1,0 +1,29 @@
+543c82f9
+http://www.omdbapi.com/?apikey=543c82f9&
+
+
+
+League of Legends:
+RGAPI-06e753c9-7a1f-42e7-831c-47005dcdea75
+https://developer.riotgames.com/docs/lol#summoner-names-to-riot-ids_obtaining-puuid-and-summonerid-from-riotid
+
+
+All champions: https://ddragon.leagueoflegends.com/cdn/15.7.1/data/en_US/champion.json
+One champion: https://ddragon.leagueoflegends.com/cdn/15.7.1/data/en_US/champion/Aatrox.json
+
+Loading splash: https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Aatrox_0.jpg
+Square asset: https://ddragon.leagueoflegends.com/cdn/15.7.1/img/champion/Aatrox.png
+Passive img: https://ddragon.leagueoflegends.com/cdn/15.7.1/img/passive/Anivia_P.png
+Ability asset: https://ddragon.leagueoflegends.com/cdn/15.7.1/img/spell/FlashFrost.png
+
+Items:
+    https://ddragon.leagueoflegends.com/cdn/15.7.1/data/en_US/item.json
+    https://ddragon.leagueoflegends.com/cdn/15.7.1/img/item/1001.png
+
+Summoner spells:
+    https://ddragon.leagueoflegends.com/cdn/15.7.1/data/en_US/summoner.json
+    https://ddragon.leagueoflegends.com/cdn/15.7.1/img/spell/SummonerFlash.png
+
+Summoner Icons:
+    https://ddragon.leagueoflegends.com/cdn/15.7.1/data/en_US/profileicon.json
+    https://ddragon.leagueoflegends.com/cdn/15.7.1/img/profileicon/685.png
