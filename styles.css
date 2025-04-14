@@ -1,12 +1,162 @@
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(28, 18, 37);
+  justify-items: center;
+  align-content: center;
 
-body{
-    margin:0;
-    padding:0;
- }
- 
+  padding: 0;
+  margin: 0;
 
-.mainBackground{
-    width: 100%;
-    height: 100vh;
-    background-color: rgb(28, 18, 37);
+  box-sizing: border-box;
+  border: solid white;
+  border-width: 1px;
+}
+
+.optionContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+
+  height: 200px;
+  width: 40%;
+}
+
+.optionText {
+  color: white;
+  font-size: 28px;
+  text-decoration: none;
+  height: 100px;
+  align-content: center;
+  margin: -7px;
+}
+
+/* Needs animation when stop hovering */
+.optionText:hover {
+  font-size: 28px;
+  animation: boldStyle 2s infinite;
+}
+
+@keyframes boldStyle {
+  0% {
+    font-size: 28px;
+  }
+  50% {
+    font-size: 29px;
+  }
+  100% {
+    font-size: 28px;
+  }
+}
+
+.optionSeparatorContainer{
+  width: 100%;
+  height: 10%;
+  border-left: solid 2px white;
+  border-right: solid 2px white;
+  align-content: center;
+}
+.optionSeparator{
+  border: 1px solid white;
+  width: 100%;
+}
+
+
+
+
+.championSplash {
+  height: 300px;
+  border-radius: 3px;
+}
+
+.scroller {
+  justify-self: center;
+  width: 50%;
+  overflow: hidden;
+  white-space: nowrap;
+  flex-wrap: nowrap;
+  margin: 5rem 0 5rem 0;
+
+  -webkit-mask: linear-gradient(
+    90deg,
+    transparent,
+    white 20%,
+    white 80%,
+    transparent
+  );
+  mask: linear-gradient(
+    90deg, 
+    transparent, white 20%, white 80%, transparent);
+   
+}
+
+.scroller_inner {
+  display: flex;
+  gap: .5rem;
+  flex-wrap: nowrap;
+  animation: scrolling 140s linear infinite;
+}
+
+.scroller .scroller_inner{
+    flex-wrap: nowrap;
+    width: max-content;
+}
+
+@keyframes scrolling {
+    0% {
+        transform: translate(-0%);
+    }
+    50% {
+        transform: translate(-50%);
+    }
+    100% {
+        transform: translate(0%);
+    }
+}
+
+
+
+.animationContainer{
+  width: 40%;
+  margin: 5rem 0 5rem 0;
+  overflow: hidden;
+  -webkit-mask: linear-gradient(
+    90deg, 
+    transparent, white 20%,
+    white 80%, transparent
+
+  );
+  mask: linear-gradient(
+    90deg, 
+    transparent, white 20%,
+    white 80%, transparent
+
+  );
+}
+
+.animationDiv{
+  display: flex;
+  flex-direction: row-reverse;
+  animation: rankAnimation 80s linear infinite;
+}
+
+
+@keyframes rankAnimation{
+  0% {
+    transform: translate(0%)
+  }
+  50% {
+    transform: translate(100%)
+  }
+  100% {
+    transform: translate(0%)
+  }
+}
+
+
+
+.rankImage{
+  height: 200px;
 }

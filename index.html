@@ -6,9 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
-    <div class="mainBackground">
-        <Image id="champImage"/>
+    <div class="scroller" id="spashScroll">
+      <div class="scroller_inner">
+        <image src="Evelynn_3.jpg" loading="lazy" class="championSplash" />
+        <image src="Akali_0.jpg" loading="lazy" class="championSplash" />
+        <image src="Evelynn_5.jpg" loading="lazy" class="championSplash" />
+        <image src="Evelynn_3.jpg" loading="lazy" class="championSplash" />
+        <image src="Akali_0.jpg" loading="lazy" class="championSplash" />
+        <image src="Evelynn_5.jpg" loading="lazy" class="championSplash" />
+      </div>
+    </div>
+
+    <div class="optionContainer">
+      <a
+        class="optionText optionTextA1"
+        href="./src/ChampionSearch/championSearch.html"
+        >Champions</a
+      >
+      <div class="optionSeparatorContainer">
+        <div class="optionSeparator"></div>
+      </div>
+      <a
+        class="optionText optionTextA2"
+        href="./src/SummonerSearch/summonerSearch.html"
+        >Summoners</a
+      >
+    </div>
+
+    <div class="animationContainer">
+      <div class="animationDiv">
+        <image src="./assets/Rank=Emerald.png" class="rankImage"/>
+        <image src="./assets/Rank=Challenger.png" class="rankImage"/>
+        <image src="./assets/Rank=Gold.png" class="rankImage"/>
+        <image src="./assets/Rank=Diamond.png" class="rankImage"/>
+        <image src="./assets/Rank=Silver.png" class="rankImage"/>
+        <image src="./assets/Rank=Grandmaster.png" class="rankImage"/>
+        <image src="./assets/Rank=Master.png" class="rankImage"/>
+      </div>
     </div>
   </body>
-  <script src="jsFiles/app.js"></script>
+  <script src="./src/app.js"></script>
 </html>
