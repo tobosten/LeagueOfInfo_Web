@@ -9,8 +9,6 @@ let selectedChampion = "Aatrox"
 })
  */
 
-
-
 const scrollers = document.querySelectorAll(".scroller");
 
 addAnimation();
