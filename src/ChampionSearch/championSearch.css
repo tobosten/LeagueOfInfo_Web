@@ -22,7 +22,8 @@ body{
     border: solid 1px white;
     height: 100%;
     flex: 1.5;
-    display: flex;;
+    display: flex;
+    flex-direction: column;
 
     justify-content: center;
     align-items: center;
@@ -40,15 +41,13 @@ body{
     background: rgb(92, 80, 155);
     border-radius: 50px;
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
 .searchBar, textarea {
     height: 2rem;
     width: 80%;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 25px;
     outline: none;
     border: none;
     background: none;
@@ -61,3 +60,54 @@ body{
     color: lightgray;
 }
 
+.material-symbols-outlined{
+    margin-left: auto;
+    padding-right: 25px;
+}
+
+
+.searchResults{
+    width: 80%;
+    margin-top: 10px;
+    background: rgb(92, 80, 155);
+    overflow: auto;
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    
+}
+
+.searchResults ul {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.searchResults ul li {
+    list-style: none;
+    cursor: pointer;
+}
+
+
+.searchCard{
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 15px;
+    border-radius: 10px;
+    
+}
+
+.searchCard:hover{
+    background-color: rgb(28, 18, 37);
+    color: rgb(92, 80, 155);
+}
+
+
+.hide{
+
+}
