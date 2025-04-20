@@ -1,10 +1,6 @@
-543c82f9
-http://www.omdbapi.com/?apikey=543c82f9&
-
-
 
 League of Legends:
-RGAPI-06e753c9-7a1f-42e7-831c-47005dcdea75
+RGAPI-b55d4d95-de32-48b8-9605-261de6e40038
 https://developer.riotgames.com/docs/lol#summoner-names-to-riot-ids_obtaining-puuid-and-summonerid-from-riotid
 
 

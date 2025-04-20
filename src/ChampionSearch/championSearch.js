@@ -1,6 +1,9 @@
 
 let champs = [];
 getData() // Fetches champion id and puts them in 'champs' variable
+const searchResults = document.querySelector(".searchResults");
+const searchBar = document.getElementById("searchBar");
+const searchItem = document.querySelector(".searchCard");
 
 
 async function getData() {
@@ -9,17 +12,13 @@ async function getData() {
     .then(res => {
         // 170 champs total
         for(i in res.data) {
-            champs.push(res.data[i].id)
+            champs.push(res.data[i].id.toLowerCase())
         }
         console.log(champs)
-      
+
     })
 }
 
-
-
-const resultsBox = document.querySelector(".searchResults")
-const searchBar = document.getElementById("searchBar");
 
 /* 
 Only works when klicking Enter
@@ -28,8 +27,34 @@ resultsBox.addEventListener("searchBar", e => {
 })
  */
 
-
 searchBar.onkeyup = function(){
-    console.log(searchBar.value)
+    let result = [];
+    let input = searchBar.value;
+    if(input.length) {
+        result = champs.filter((keyword) => {
+            return keyword.toLowerCase().includes(input.toLowerCase());
+        });
+        console.log(result)
+    }
+    display(result)
+    if(!result.length) {
+        searchResults.innerHTML = "";
+    }
 }
     
+function display(result) {
+    const content = result.map((list) => {
+        return "<li class='searchCard' onClick='selectInput(this)'>"+ 
+        list.charAt(0).toUpperCase() + list.slice(1) + "</li>";
+    })
+
+    searchResults.innerHTML = "<ul>" + content.join("") + "</ul>"
+}
+
+function selectInput(list) {
+    searchBar.value = list.innerHTML;
+    searchResults.innerHTML = "";
+    console.log(searchResults)
+}
+
+
